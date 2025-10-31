@@ -4,10 +4,10 @@
   command = "cd frontend && npm install && npm run build"
 
 [build.environment]
-  NODE_VERSION = "20.0.0"
-  NPM_VERSION = "10.0.0"
-  CI = "false"  # This prevents builds from failing due to warnings
+  NODE_VERSION = "20.5.0"
+  NPM_FLAGS = "--legacy-peer-deps"
   NODE_OPTIONS = "--openssl-legacy-provider"
+  CI = "false"
 
 [dev]
   command = "cd frontend && npm start"
